@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cleaning Company Alberta | Cleaning Services | Oxford Cleaning Inc.</title>
+<meta name="description" content="Oxford Cleaning Inc. is a full-service cleaning company in Alberta. Commercial, industrial, residential, move in/move out and post-construction cleaning. Over 30 years of experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#6ebe44; --green-d:#4f9a2a; --blue:#13abe2; --blue-d:#1a79c9;
+  --ink:#151b21; --ink-2:#232b33; --text:#3d454d; --muted:#6b747d;
+  --paper:#f4f6f1; --line:#dfe4da; --white:#fff;
+  --wide:"Archivo",system-ui,sans-serif; --body:"Figtree",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html{overflow-x:clip}
+body{font-family:var(--body);color:var(--text);background:var(--white);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.h{font-family:var(--wide);font-stretch:112%;color:var(--ink);line-height:1.02;letter-spacing:-.01em}
+.tag{font-family:var(--wide);font-stretch:125%;font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+.tag::before{content:"";width:22px;height:3px;background:var(--green)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--wide);font-stretch:110%;font-weight:700;font-size:15px;padding:16px 26px;border:2px solid transparent;transition:.25s}
+.btn svg{width:18px;height:18px;transition:transform .25s}
+.btn:hover svg{transform:translateX(4px)}
+.btn-blue{background:var(--blue);color:#fff}.btn-blue:hover{background:var(--blue-d)}
+.btn-green{background:var(--green);color:#fff}.btn-green:hover{background:var(--green-d)}
+.btn-line{border-color:currentColor}
+.btn-line:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* utility bar */
+.util{background:var(--ink);color:#c9d1d8;font-size:14px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:9px 0;flex-wrap:wrap}
+.util a:hover{color:#fff}
+.util span b{color:var(--green);font-weight:600}
+.util .u-left{display:flex;gap:26px;flex-wrap:wrap}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 0}
+.logo img{height:52px;width:auto}
+nav ul{display:flex;gap:30px;list-style:none;font-weight:600;font-size:15.5px;color:var(--ink)}
+nav li{position:relative}
+nav a{padding:8px 0;display:inline-block;position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:2px;height:2px;width:0;background:var(--blue);transition:width .25s}
+nav a:hover::after,nav a.on::after{width:100%}
+.dd{position:absolute;top:100%;left:-18px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--green);min-width:300px;padding:10px 0;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;box-shadow:0 20px 40px -20px rgba(0,0,0,.25)}
+.dd a{display:block;padding:9px 20px;font-weight:500;font-size:15px}
+.dd a::after{display:none}
+.dd a:hover{background:var(--paper);color:var(--blue-d)}
+nav li:hover .dd{opacity:1;visibility:visible;transform:none}
+.h-cta{display:flex;gap:10px}
+.h-cta .btn{padding:12px 18px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:26px;height:2px;background:var(--ink);margin:6px auto;transition:.3s}
+
+/* HERO */
+.hero{position:relative;padding:70px 0 0;background:linear-gradient(180deg,#fff 0,#fff 62%,var(--paper) 62%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:end}
+.hero h1{font-size:clamp(44px,6.4vw,92px);font-weight:800;font-stretch:118%;margin:22px 0 26px}
+.hero h1 .ln{display:block}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero h1 .g{color:var(--green)}
+.hero .lead{font-size:19px;max-width:540px;color:var(--text)}
+.hero .lead strong{color:var(--ink)}
+.hero-actions{display:flex;gap:14px;margin:34px 0 0;flex-wrap:wrap}
+.hero-left{padding-bottom:70px}
+.hero-meta{display:flex;gap:0;margin-top:46px;border-top:1px solid var(--line)}
+.hero-meta div{padding:18px 26px 0 0;margin-right:26px;border-right:1px solid var(--line)}
+.hero-meta div:last-child{border:0}
+.hero-meta b{display:block;font-family:var(--wide);font-stretch:120%;font-size:30px;color:var(--ink);line-height:1}
+.hero-meta span{font-size:13.5px;color:var(--muted)}
+.hero-visual{position:relative;align-self:stretch;min-height:600px}
+.hv-main{position:absolute;inset:0 0 0 40px;clip-path:polygon(0 0,100% 0,100% 100%,22% 100%,0 82%);overflow:hidden;background:#cfd8de}
+.hv-main img{width:100%;height:100%;object-fit:cover}
+.hv-stripe{position:absolute;left:0;top:60px;width:14px;height:220px;background:linear-gradient(var(--green) 50%,var(--blue) 50%)}
+.hv-card{position:absolute;right:-18px;top:46px;background:var(--ink);color:#fff;padding:22px 24px;width:230px;box-shadow:0 30px 50px -25px rgba(0,0,0,.5)}
+.hv-card .clock{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.hv-card .clock svg{width:34px;height:34px;color:var(--green)}
+.hv-card b{font-family:var(--wide);font-stretch:120%;font-size:28px;line-height:1}
+.hv-card p{font-size:14px;color:#b9c3cb;line-height:1.45}
+.hv-badge{position:absolute;left:-12px;bottom:110px;background:#fff;padding:14px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 24px 40px -22px rgba(0,0,0,.35);border-left:4px solid var(--green)}
+.hv-badge img{width:62px}
+.hv-badge b{font-family:var(--wide);font-stretch:115%;color:var(--ink);font-size:15px;line-height:1.2;display:block}
+.hv-badge span{font-size:13px;color:var(--muted)}
+
+/* languages marquee */
+.langs{background:var(--blue-d);color:#fff;overflow:hidden;position:relative}
+.langs .track{display:flex;gap:56px;white-space:nowrap;padding:20px 0;animation:mq 34s linear infinite;width:max-content}
+.langs .track span{font-family:var(--wide);font-stretch:120%;font-weight:700;font-size:22px;display:inline-flex;align-items:center;gap:56px}
+.langs .track span::after{content:"";width:9px;height:9px;background:var(--green);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* intro / services directory */
+.services{padding:120px 0;background:var(--paper)}
+.svc-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.svc-head{position:sticky;top:120px;align-self:start}
+.svc-head h2{font-size:clamp(36px,4.2vw,58px);font-weight:800;margin:18px 0 22px}
+.svc-head p{max-width:420px}
+.svc-preview{margin-top:34px;aspect-ratio:4/3;position:relative;overflow:hidden;background:#dbe2d6;clip-path:polygon(0 0,88% 0,100% 16%,100% 100%,0 100%)}
+.svc-preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .45s,transform .9s}
+.svc-preview img.on{opacity:1;transform:none}
+.svc-list{list-style:none;border-top:2px solid var(--ink)}
+.svc-list li{border-bottom:1px solid #cdd5c7}
+.svc-list a{display:grid;grid-template-columns:70px 1fr 56px;gap:18px;align-items:center;padding:34px 0;transition:padding .3s}
+.svc-list .n{font-family:var(--wide);font-stretch:125%;font-weight:700;font-size:15px;color:var(--green-d)}
+.svc-list h3{font-family:var(--wide);font-stretch:112%;font-size:clamp(22px,2.4vw,32px);color:var(--ink);line-height:1.1;font-weight:700}
+.svc-list .sub{display:block;margin-top:8px;font-size:15px;color:var(--muted)}
+.svc-list .go{width:56px;height:56px;border:2px solid var(--ink);display:grid;place-items:center;transition:.3s}
+.svc-list .go svg{width:20px;height:20px;transition:transform .3s}
+.svc-list li:hover a,.svc-list li.on a{padding-left:14px}
+.svc-list li:hover .go,.svc-list li.on .go{background:var(--blue);border-color:var(--blue);color:#fff}
+.svc-list li:hover .go svg{transform:rotate(-45deg)}
+.svc-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.svc-chips em{font-style:normal;font-size:13px;font-weight:600;padding:5px 12px;background:#fff;border:1px solid #cdd5c7;color:var(--ink)}
+
+/* badges band */
+.trust{background:var(--ink);color:#fff;padding:0}
+.trust .wrap{display:grid;grid-template-columns:1.1fr repeat(3,1fr)}
+.trust-intro{padding:54px 40px 54px 0;border-right:1px solid #2f3942}
+.trust-intro h2{color:#fff;font-size:30px;font-weight:800}
+.trust-intro p{color:#9aa6b0;margin-top:10px;font-size:15px}
+.trust-item{display:flex;align-items:center;gap:18px;padding:40px 30px;border-right:1px solid #2f3942}
+.trust-item:last-child{border-right:0}
+.trust-item .medal{width:84px;height:84px;flex:none;background:#fff;border-radius:50%;display:grid;place-items:center;padding:6px}
+.trust-item .medal img{max-height:74px}
+.trust-item b{font-family:var(--wide);font-stretch:115%;font-size:18px;display:block;line-height:1.2}
+.trust-item span{font-size:14px;color:#9aa6b0}
+
+/* checklist / work order */
+.why{padding:130px 0;position:relative}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
+.why-photo{position:relative;min-height:640px;overflow:hidden}
+.why-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why-photo .cap{position:absolute;left:0;bottom:0;background:var(--green);color:#fff;padding:26px 30px;max-width:340px}
+.why-photo .cap b{font-family:var(--wide);font-stretch:120%;font-size:44px;line-height:1;display:block}
+.why-photo .cap span{font-size:15px;font-weight:500}
+.order{background:var(--paper);padding:56px 56px 50px;position:relative;border-top:6px solid var(--blue)}
+.order-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding-bottom:22px;border-bottom:2px dashed #c7d0c0}
+.order-top h2{font-size:clamp(30px,3.2vw,44px);font-weight:800;margin-top:14px}
+.stamp{flex:none;width:112px;height:112px;border:3px solid var(--green-d);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--green-d);font-family:var(--wide);font-stretch:125%;font-weight:800;font-size:11px;letter-spacing:.14em;transform:rotate(-12deg);line-height:1.3;position:relative}
+.stamp::before{content:"";position:absolute;inset:6px;border:1px dashed var(--green-d);border-radius:50%}
+.stamp b{font-size:26px;display:block;letter-spacing:0}
+.checks{list-style:none;margin-top:10px}
+.checks li{display:grid;grid-template-columns:34px 1fr auto;gap:14px;align-items:center;padding:13px 0;border-bottom:1px solid #dde3d8;font-weight:600;color:var(--ink);font-size:16.5px}
+.checks .box{width:24px;height:24px;border:2px solid var(--ink);display:grid;place-items:center;background:#fff}
+.checks .box svg{width:16px;height:16px;color:var(--green-d);stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .5s}
+.checks li.done .box svg{stroke-dashoffset:0}
+.checks .ok{font-family:var(--wide);font-stretch:125%;font-size:11px;letter-spacing:.14em;color:var(--muted);font-weight:700}
+
+/* languages */
+.speak{background:var(--blue);color:#fff;padding:110px 0;position:relative;overflow:hidden}
+.speak::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:url(images/oxford-globe.png) center/contain no-repeat;opacity:.12;filter:grayscale(1) brightness(3)}
+.speak-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.speak .tag{color:#fff}.speak .tag::before{background:#fff}
+.speak h2{color:#fff;font-size:clamp(34px,4vw,56px);font-weight:800;margin:18px 0 18px}
+.speak p{color:#e3f5fc;max-width:460px}
+.words{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,255,255,.35);border-left:1px solid rgba(255,255,255,.35)}
+.words div{padding:34px 30px;border-right:1px solid rgba(255,255,255,.35);border-bottom:1px solid rgba(255,255,255,.35);transition:background .3s}
+.words div:hover{background:rgba(21,27,33,.18)}
+.words b[dir=rtl]{text-align:left}
+.words b{font-family:var(--wide);font-stretch:118%;font-size:clamp(28px,3vw,42px);display:block;line-height:1.1}
+.words span{font-size:13px;letter-spacing:.16em;text-transform:uppercase;opacity:.8;font-weight:600}
+
+/* hire */
+.hire{padding:130px 0 120px}
+.hire-box{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
+.hire h2{font-size:clamp(40px,5.6vw,80px);font-weight:800;font-stretch:118%}
+.hire h2 span{color:var(--green)}
+.hire p{font-size:18px;max-width:640px;margin-top:26px}
+.hire-side{display:flex;flex-direction:column;gap:12px}
+.hire-side a.line{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border:2px solid var(--ink);transition:.25s}
+.hire-side a.line:hover{background:var(--ink);color:#fff}
+.hire-side a.line:hover small{color:#9aa6b0}
+.hire-side a.line:hover b{color:#fff}
+.hire-side small{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.hire-side b{font-family:var(--wide);font-stretch:100%;font-size:18px;color:var(--ink);overflow-wrap:anywhere}
+.hire-side svg{width:22px;height:22px;flex:none}
+
+/* contact board */
+.board{background:var(--paper);padding:90px 0;border-top:1px solid var(--line)}
+.board-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:0;background:#fff;border:1px solid var(--line)}
+.board-grid>div{padding:38px 32px;border-right:1px solid var(--line)}
+.board-grid>div:last-child{border-right:0}
+.board h4{font-family:var(--wide);font-stretch:125%;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-d);margin-bottom:16px}
+.board address{font-style:normal;color:var(--ink);font-weight:500;line-height:1.7}
+.hours{display:flex;gap:22px;align-items:center}
+.dial{width:96px;height:96px;flex:none;border-radius:50%;background:conic-gradient(var(--green) 0 75%,#e6ece1 75% 100%);display:grid;place-items:center}
+.dial::before{content:"24/7";width:72px;height:72px;border-radius:50%;background:#fff;display:grid;place-items:center;font-family:var(--wide);font-stretch:120%;font-weight:800;color:var(--ink);font-size:20px}
+.hours p{color:var(--ink);font-weight:600;line-height:1.5}
+.hours small{display:block;color:var(--muted);font-weight:500;font-size:14px;margin-top:6px}
+.board .pay{margin-top:18px}
+
+/* footer */
+footer{background:var(--ink);color:#aeb8c1;padding:70px 0 0}
+.f-top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px;padding-bottom:50px;border-bottom:1px solid #2f3942}
+.f-logo{background:#fff;display:inline-block;padding:14px 18px}
+.f-logo img{height:44px}
+.f-top p{margin-top:20px;font-size:15px;max-width:380px}
+footer h5{font-family:var(--wide);font-stretch:125%;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:9px;font-size:15px}
+footer ul a:hover{color:var(--green)}
+.fb{display:inline-flex;align-items:center;gap:10px;margin-top:20px;color:#fff;font-weight:600;font-size:15px}
+.fb img{width:32px;height:32px}
+.f-bot{display:flex;justify-content:space-between;gap:20px;padding:24px 0;font-size:14px;flex-wrap:wrap}
+.f-bot a{color:var(--green)}
+.f-bot a:hover{color:#fff}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1100px){
+  nav ul{gap:20px}
+  .h-cta .btn-green{display:none}
+  .trust .wrap{grid-template-columns:1fr 1fr 1fr}
+  .trust-intro{grid-column:1/-1;border-right:0;border-bottom:1px solid #2f3942;padding:44px 0 30px}
+  .board-grid{grid-template-columns:1fr 1fr}
+  .board-grid>div:nth-child(2){border-right:0}
+  .board-grid>div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+@media (max-width:920px){
+  .burger{display:block}
+  nav{position:fixed;inset:0 0 0 auto;width:min(340px,86vw);background:#fff;padding:90px 28px 30px;transform:translateX(100%);visibility:hidden;transition:transform .35s,visibility .35s;box-shadow:-20px 0 50px rgba(0,0,0,.2);overflow:auto}
+  nav.open{transform:none;visibility:visible}
+  nav ul{flex-direction:column;gap:4px;font-size:18px}
+  .dd{position:static;opacity:1;visibility:visible;transform:none;border:0;box-shadow:none;padding:0 0 0 14px;min-width:0}
+  .dd a{font-size:15px;padding:6px 0}
+  .burger{position:relative;z-index:60}
+  .burger.x span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .burger.x span:nth-child(2){opacity:0}
+  .burger.x span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .h-cta{display:none}
+  .hero{padding-top:40px;background:#fff}
+  .hero-grid,.svc-grid,.why-grid,.speak-grid,.hire-box,.f-top{grid-template-columns:1fr}
+  .hero-left{padding-bottom:20px}
+  .hero-visual{min-height:440px;margin-bottom:0}
+  .hv-main{inset:0 0 0 20px}
+  .hv-card{right:0}
+  .svc-head{position:static}
+  .svc-preview{display:none}
+  .why-photo{min-height:380px}
+  .services,.why,.hire{padding:80px 0}
+  .speak{padding:80px 0}
+  .order{padding:40px 26px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .util .u-left span:nth-child(3){display:none}
+  .logo img{height:40px}
+  .hero-meta{flex-wrap:wrap}
+  .hero-meta div{padding:16px 16px 0 0;margin-right:16px}
+  .hero-meta b{font-size:24px}
+  .hv-card{width:190px;padding:18px}
+  .hv-badge{bottom:30px}
+  .trust .wrap{grid-template-columns:1fr}
+  .trust-item{border-right:0;border-bottom:1px solid #2f3942;padding:24px 0}
+  .svc-list a{grid-template-columns:44px 1fr 44px;gap:12px;padding:26px 0}
+  .svc-list .go{width:44px;height:44px}
+  .order-top{flex-direction:column}
+  .stamp{width:90px;height:90px}
+  .words div{padding:24px 18px}
+  .board-grid{grid-template-columns:1fr}
+  .board-grid>div{border-right:0;border-bottom:1px solid var(--line)}
+  .hours{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){.langs .track{animation:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <div class="u-left">
+      <span><b>Phone</b> <a href="tel:+14032446622">(403) 244-6622</a></span>
+      <span><b>Fax</b> (403) 244-6330</span>
+      <span><a href="mailto:contact@oxfordcleaningservices.com">contact@oxfordcleaningservices.com</a></span>
+    </div>
+    <span>Services available 24 hours a day, 7 days a week</span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo" aria-label="Oxford Cleaning Inc. home"><img src="images/oxford-logo.png" alt="Oxford Cleaning Inc."></a>
+    <nav id="nav">
+      <ul>
+        <li><a href="#" class="on">Home</a></li>
+        <li><a href="http://oxfordcleaningservices.com/about-us">About Us</a></li>
+        <li><a href="http://oxfordcleaningservices.com/services">Services</a>
+          <div class="dd">
+            <a href="http://oxfordcleaningservices.com/residential-cleaning-services">Residential Cleaning Services</a>
+            <a href="http://oxfordcleaningservices.com/move-inmove-out-cleaning">Move In/Move Out Cleaning</a>
+            <a href="http://oxfordcleaningservices.com/commercial-and-industrial-cleaning-services">Commercial And Industrial Cleaning Services</a>
+            <a href="http://oxfordcleaningservices.com/post-construction-cleaning-services">Post-Construction Cleaning Services</a>
+          </div>
+        </li>
+        <li><a href="http://oxfordcleaningservices.com/estimates">Estimates</a></li>
+        <li><a href="http://oxfordcleaningservices.com/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="h-cta">
+      <a class="btn btn-green" href="http://oxfordcleaningservices.com/contact/#form">Book a Cleaning</a>
+      <a class="btn btn-blue" href="http://oxfordcleaningservices.com/estimates/#get-a-quote">Get a Quote</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-left">
+      <span class="tag">Full-Service Cleaning Company &middot; Alberta</span>
+      <h1 class="h"><span class="ln">Your source</span><span class="ln">for <em>comprehensive</em></span><span class="ln g">cleaning.</span></h1>
+      <p class="lead">Knock cleaning tasks off your to-do list. Enjoy a spotless space without breaking a sweat when you employ the services of <strong>Oxford Cleaning Inc.</strong> Our cleaning services cover all building types and post-construction sites, plus your move in or move out cleaning needs.</p>
+      <div class="hero-actions">
+        <a class="btn btn-blue" href="http://oxfordcleaningservices.com/estimates/#get-a-quote">Get a Free Estimate <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="tel:+14032446622">(403) 244-6622</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>30+</b><span>Years of experience</span></div>
+        <div><b>7</b><span>Days a week, open every day</span></div>
+        <div><b>4</b><span>Languages spoken</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <span class="hv-stripe"></span>
+      <div class="hv-main"><img src="images/hero-commercial.jpg" onerror="this.onerror=null;this.src='images/office-mopping.jpg'" alt="Commercial floor cleaning by Oxford Cleaning Inc."></div>
+      <div class="hv-card">
+        <div class="clock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2.2"/></svg><b>24/7</b></div>
+        <p>Our services are available 24 hours a day, 7 days a week.</p>
+      </div>
+      <div class="hv-badge"><img src="images/badge-insured.png" alt="Insured and bonded $2,000,000"><div><b>Licensed, Bonded<br>&amp; Insured</b><span>Locally owned</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="langs" aria-label="Multi-lingual staff">
+  <div class="track">
+    <span>English</span><span>Türkçe</span><span>العربية</span><span>Deutsch</span><span>Multi-Lingual Staff</span>
+    <span>English</span><span>Türkçe</span><span>العربية</span><span>Deutsch</span><span>Multi-Lingual Staff</span>
+  </div>
+</div>
+
+<section class="services" id="services">
+  <div class="wrap svc-grid">
+    <div class="svc-head rv">
+      <span class="tag">What we clean</span>
+      <h2 class="h">Every building type. Every stage.</h2>
+      <p>From occupied offices to fresh post-construction sites and the day you hand over the keys, one full-service team handles it.</p>
+      <div class="svc-preview" id="svcPreview">
+        <img class="on" data-i="0" src="images/commercial.jpg" onerror="this.onerror=null;this.src='images/office-mopping.jpg'" alt="Commercial and industrial cleaning">
+        <img data-i="1" src="images/post-construction.jpg" onerror="this.onerror=null;this.src='images/office-mopping.jpg'" alt="Post-construction cleaning">
+        <img data-i="2" src="images/residential.jpg" onerror="this.onerror=null;this.src='images/office-mopping.jpg'" alt="Residential cleaning">
+        <img data-i="3" src="images/move-out.jpg" onerror="this.onerror=null;this.src='images/office-mopping.jpg'" alt="Move in and move out cleaning">
+      </div>
+    </div>
+    <ul class="svc-list" id="svcList">
+      <li class="on rv" data-i="0"><a href="http://oxfordcleaningservices.com/commercial-and-industrial-cleaning-services">
+        <span class="n">01</span>
+        <span><h3>Commercial &amp; Industrial Cleaning</h3><span class="sub">Ongoing cleaning for businesses and facilities of all sizes.</span>
+          <span class="svc-chips"><em>Janitorial</em><em>Office</em><em>Condo</em><em>Carpet &amp; Floor Care</em></span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li class="rv" data-i="1"><a href="http://oxfordcleaningservices.com/post-construction-cleaning-services">
+        <span class="n">02</span>
+        <span><h3>Post-Construction Cleaning</h3><span class="sub">Dust, debris and residue cleared so the space is ready to use.</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li class="rv" data-i="2"><a href="http://oxfordcleaningservices.com/residential-cleaning-services">
+        <span class="n">03</span>
+        <span><h3>Residential Cleaning</h3><span class="sub">A clean and tidy home without the weekend spent scrubbing.</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+      <li class="rv" data-i="3"><a href="http://oxfordcleaningservices.com/move-inmove-out-cleaning">
+        <span class="n">04</span>
+        <span><h3>Move In / Move Out Cleaning</h3><span class="sub">Start fresh or hand over the keys with a spotless space.</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="trust-intro"><h2 class="h">Backed by real guarantees.</h2><p>Registered, certified and locally owned in Calgary.</p></div>
+    <div class="trust-item"><span class="medal"><img src="images/badge-insured.png" alt=""></span><div><b>Insured &amp; Bonded</b><span>Up to $2,000,000</span></div></div>
+    <div class="trust-item"><span class="medal"><img src="images/badge-satisfaction.png" alt=""></span><div><b>100% Satisfaction</b><span>Guaranteed</span></div></div>
+    <div class="trust-item"><span class="medal"><img src="images/badge-premium.png" alt=""></span><div><b>Premium Quality</b><span>100% guaranteed</span></div></div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap why-grid">
+    <div class="why-photo rv">
+      <img src="images/office-mopping.jpg" alt="Oxford Cleaning professional mopping an office floor">
+      <div class="cap"><b>30+ yrs</b><span>of professional cleaning services in Alberta</span></div>
+    </div>
+    <div class="order rv">
+      <div class="order-top">
+        <div><span class="tag">Why choose our cleaning company?</span><h2 class="h">Ten things you can tick off.</h2></div>
+        <div class="stamp"><span><b>100%</b>Satisfaction<br>Guaranteed</span></div>
+      </div>
+      <ul class="checks" id="checks">
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Free Estimates Offered<span class="ok">01</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Fully Licensed, Bonded, and Insured<span class="ok">02</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Multi-Lingual Staff Members<span class="ok">03</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>High-Quality Cleaning Supplies and Equipment<span class="ok">04</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Locally Owned<span class="ok">05</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Open Every Day<span class="ok">06</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Over 30 Years of Experience<span class="ok">07</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Professional Cleaning Services<span class="ok">08</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Registered and Certified<span class="ok">09</span></li>
+        <li><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M4 12.5l5 5L20 6.5"/></svg></span>Various Payment Options Accepted<span class="ok">10</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="speak">
+  <div class="wrap speak-grid">
+    <div class="rv">
+      <span class="tag">Multi-lingual staff members</span>
+      <h2 class="h">We clean in four languages.</h2>
+      <p>Our team speaks English, Turkish, Arabic and German, so instructions, walkthroughs and questions are never lost in translation.</p>
+    </div>
+    <div class="words rv">
+      <div><b>Clean</b><span>English</span></div>
+      <div><b>Temiz</b><span>Turkish</span></div>
+      <div><b lang="ar" dir="rtl">نظيف</b><span>Arabic</span></div>
+      <div><b>Sauber</b><span>German</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="hire">
+  <div class="wrap hire-box">
+    <div class="rv">
+      <span class="tag">Hire our cleaning experts today</span>
+      <h2 class="h" style="margin-top:20px">A clean, tidy space is <span>within reach.</span></h2>
+      <p>We always strive to do our best every time you hire us, so you get quality and professional services that fall nothing short of your expectations. Want to find out more about who we are first? Call or email us and we'll fill you in.</p>
+    </div>
+    <div class="hire-side rv">
+      <a class="line" href="tel:+14032446622"><span><small>Call us</small><b>(403) 244-6622</b></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="line" href="mailto:contact@oxfordcleaningservices.com"><span><small>Email us</small><b>contact@oxfordcleaningservices.com</b></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-green" style="justify-content:center;padding:20px" href="http://oxfordcleaningservices.com/contact/#form">Book a Cleaning <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="board">
+  <div class="wrap">
+    <div class="board-grid rv">
+      <div>
+        <h4>Office business hours</h4>
+        <div class="hours"><span class="dial" aria-hidden="true"></span><p>Monday to Saturday<br>8:30 AM - 5:30 PM<small>Services available 24 hours a day, 7 days a week</small></p></div>
+      </div>
+      <div>
+        <h4>Calgary office address</h4>
+        <address>2310 – 2nd Street SW.<br>Calgary, Alberta, Canada<br>T2S 3C4</address>
+      </div>
+      <div>
+        <h4>Calgary mailing address</h4>
+        <address>53 Strathlea Close SW.<br>Calgary, Alberta, Canada<br>T3H 5C6</address>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <address>Phone: <a href="tel:+14032446622">(403) 244-6622</a><br>Fax: (403) 244-6330</address>
+        <div class="pay"><h4 style="margin-bottom:10px">Payment options</h4><img src="images/payment.png" alt="Accepted payment methods" width="200"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <span class="f-logo"><img src="images/oxford-logo.png" alt="Oxford Cleaning Inc."></span>
+        <p>Oxford Cleaning Inc. is a full-service cleaning company in Alberta covering all building types, post-construction sites and move in or move out cleaning.</p>
+        <a class="fb" href="https://www.facebook.com/OxfordCleaningInc/" target="_blank" rel="noopener"><img src="images/facebook.png" alt="">Follow us on Facebook</a>
+      </div>
+      <div>
+        <h5>Quick links</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="http://oxfordcleaningservices.com/about-us">About Us</a></li>
+          <li><a href="http://oxfordcleaningservices.com/services">Services</a></li>
+          <li><a href="http://oxfordcleaningservices.com/estimates">Estimates</a></li>
+          <li><a href="http://oxfordcleaningservices.com/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="http://oxfordcleaningservices.com/residential-cleaning-services">Residential Cleaning</a></li>
+          <li><a href="http://oxfordcleaningservices.com/move-inmove-out-cleaning">Move In/Move Out Cleaning</a></li>
+          <li><a href="http://oxfordcleaningservices.com/commercial-and-industrial-cleaning-services">Commercial &amp; Industrial</a></li>
+          <li><a href="http://oxfordcleaningservices.com/post-construction-cleaning-services">Post-Construction Cleaning</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>Copyright © <span id="yr">2026</span> Oxford Cleaning Inc. All Rights Reserved.</span>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+const nav=document.getElementById('nav'),bg=document.getElementById('burger');
+bg.addEventListener('click',()=>{nav.classList.toggle('open');bg.classList.toggle('x')});
+// service hover preview
+const items=document.querySelectorAll('#svcList li'),imgs=document.querySelectorAll('#svcPreview img');
+items.forEach(li=>li.addEventListener('mouseenter',()=>{
+  items.forEach(x=>x.classList.remove('on'));li.classList.add('on');
+  imgs.forEach(im=>im.classList.toggle('on',im.dataset.i===li.dataset.i));
+}));
+// reveal + checklist tick
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const checks=document.querySelectorAll('#checks li');
+const io2=new IntersectionObserver(es=>{if(es[0].isIntersecting){checks.forEach((li,i)=>setTimeout(()=>li.classList.add('done'),200+i*140));io2.disconnect()}},{threshold:.3});
+io2.observe(document.getElementById('checks'));
+</script>
+</body>
+</html>
